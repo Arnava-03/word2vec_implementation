@@ -3,8 +3,7 @@
 ## Project Overview
 This project involves implementing the Word2Vec model from scratch based on the research paper *"Efficient Estimation of Word Representations in Vector Space"* by Mikolov et al. The focus is on creating domain-specific word embeddings for healthcare, using a dataset of medical texts, and demonstrating their application in real-world tasks.
 
-The project showcases a smaller-scale but functional version of the Word2Vec algorithm, tailored specifically to understand and analyze healthcare-related terms and concepts.
-
+The project showcases a smaller-scale but functional version of the Word2Vec algorithm.
 ---
 
 ## Features
@@ -15,10 +14,11 @@ The project showcases a smaller-scale but functional version of the Word2Vec alg
    - Trained on a healthcare dataset (e.g., PubMed abstracts).
    - Preprocessing pipeline for cleaning and tokenizing medical texts.
 3. **Evaluation**:
-   - Intrinsic evaluation (word similarity, word analogies).
-   - Extrinsic evaluation (downstream tasks such as symptom-disease classification).
+   - Intrinsic tasks like word similarity, word analogies etc.
 4. **Visualization**:
-   - t-SNE/PCA plots to visualize word clusters.
+   - PCA plots to visualize word clusters.
    - Heatmaps for word similarity.
-   
+5. Python script with **object oriented** design, wherein the core functionalities are encapsulated in myWord2Vec class.
+   - Methods such as process_data(tokenise, build vocab), generate_training_data, train, save_embeddings and load embeddings are implemented.
+   - Tunable parameters like embedding_dim, window_size, learning_rate, epochs etc.
 ---
